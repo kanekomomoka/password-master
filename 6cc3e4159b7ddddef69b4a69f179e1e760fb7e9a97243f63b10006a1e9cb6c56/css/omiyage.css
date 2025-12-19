@@ -644,6 +644,13 @@ nav ul li.has-child.active::before{
   img.slide.active{
     width: 100vw;
   }
+  .tohoku_text{
+    font-size: 1.5em;
+    margin: 2em 5em;
+  }
+  .link_list{
+    font-size: 3em;
+  }
 .main_img{
 
 
@@ -651,7 +658,30 @@ clip-path: path("M0,0 L2700,0 L2700,780 Q2450,728 2100,752 T1700,728 T1300,752 T
 
 
 }
+ .section_omiyage {
+    max-width: 2150px;
+  }
+  .section_omiyage ul li {
+  width: 700px; /* 固定幅にすることで重なりを防止 */
+  box-sizing: border-box;
 }
+h3{
+  font-size: 1.5em;
+}
+.omiyage_list_text{
+  font-size: 1.3em;
+}
+.omiyage_title
+{font-size: 3em;
+text-align: center;
+padding-top: 2em;
+}
+.main_inner{
+  height: 50vh;
+
+}
+}
+
 
 
 

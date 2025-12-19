@@ -23,7 +23,10 @@ body, html {
   margin: 0;
   padding: 0;
 }
-
+body{
+    font-size: clamp(14px, 1vw, 18px);
+  line-height: 1.8;
+}
 /* ---- ローディング画面 ---- */
 .loading {
   margin: 0 auto;
@@ -165,6 +168,7 @@ background-color: #fff9f1;
 }
 
 .main {
+  min-height: clamp(60vh, 70vh, 90vh);
   position: relative;
   height: 100vh;
   overflow: hidden;
@@ -1008,7 +1012,7 @@ font-size: 1.5em;
   max-width: 50%;
 }
 .footer{
-clip-path: none;
+  clip-path: path("M0,1000 L2700,1000 L2700,160 Q2301,99 2142,192 T1783,187 T1313,131 T840,98 T500,172 T0,140 Z");
 margin-top: 6em;
 }
 .footer_nav ul{
@@ -1022,7 +1026,7 @@ margin-top: 0;
 .slideshow{
 
 
-clip-path: path("M0,0 L2650,20 L2700,870 Q2450,458 2100,642 T1700,728 T1300,752 T900,728 T500,782 T0,670 Z");
+clip-path: path("M0,0 L2700,20 L2700,870 Q2450,458 2100,642 T1700,728 T1300,752 T900,728 T500,782 T0,670 Z");
 
 
 }
@@ -1030,4 +1034,7 @@ clip-path: path("M0,0 L2650,20 L2700,870 Q2450,458 2100,642 T1700,728 T1300,752 
   height: 70vh;
 }
 
+}
+:root {
+  --content-max: 1200px;
 }
